@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="editor.css" />
+    <script src="jquery-2.0.3.js"></script>
+    <script src="editor.js"></script>
+    <title></title>
+    <style>
+        .textarea{
+            width:300px;
+            height:200px;
+            border:1px solid #bbbbbb;
+        }
+    </style>
+</head>
+<script>
+ready.ondocument(function(){
+   new editor("ed").appendLa(['fontsize','section','link','img'])
+})
+</script>
+<body>
+<textarea id="ed" class="textarea"></textarea>
+</body>
+</html>
